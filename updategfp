@@ -1,0 +1,12 @@
+#!/bin/bash
+
+grep pmax $1 > EP.info
+grep -m 1 ppa $1 >>EP.info
+grep -m 1 ppe $1 >>EP.info
+
+
+updategfp.py $2
+
+
+
+
